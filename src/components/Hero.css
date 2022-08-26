@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#hero .hero-content{
+}
+#hero .hero-content .contact{
+
+}
+#hero .social-icon:hover{
+  color: #000000;
+}
+.icon-social:hover{
+  opacity: 0.6;
+}
+.astranout{
+  top: 20%;
+  animation: bounce 4s ease infinite;
+}
+@keyframes bounce{
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media   (max-width: 1024px) {
+  #hero .hero__text{
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100%;
+  }
+  #hero .astranout{
+    display: none;
+  }
+  #hero {
+    text-align: center;
+  }
+  .hero__social-icons li{
+    margin-right: 1.5rem;
+  }
+  .hero__social-icons a{
+    font-size: 2.5rem;
+  }
+  
+}
